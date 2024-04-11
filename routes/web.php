@@ -23,3 +23,7 @@ Route::middleware([
 Route::get('/register', function () {
     // ...
 })->middleware(['auth:sanctum']);
+
+Route::get('/offline', function () {
+    return view('offline');
+});

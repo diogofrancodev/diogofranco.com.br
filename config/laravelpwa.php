@@ -5,7 +5,7 @@ return [
     'manifest' => [
         'name' => env('APP_NAME', 'Diogo Franco'),
         'short_name' => 'DF',
-        'start_url' => 'https://diogofranco.com.br',
+        'start_url' => '/',
         'background_color' => '#ffffff',
         'theme_color' => '#000000',
         'display' => 'standalone',
