@@ -19,3 +19,7 @@ Route::middleware([
     })->name('dashboard');
 });
 
+
+Route::get('/register', function () {
+    // ...
+})->middleware(['auth:sanctum']);
