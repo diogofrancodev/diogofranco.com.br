@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'name' => 'LaravelPWA',
+    'name' => 'DiogoFranco',
     'manifest' => [
-        'name' => env('APP_NAME', 'My PWA App'),
-        'short_name' => 'PWA',
-        'start_url' => '/',
+        'name' => env('APP_NAME', 'Diogo Franco'),
+        'short_name' => 'DF',
+        'start_url' => 'https://diogofranco.com.br',
         'background_color' => '#ffffff',
         'theme_color' => '#000000',
         'display' => 'standalone',
