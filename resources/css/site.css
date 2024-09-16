@@ -1,18 +1,2 @@
-@import '../../node_modules/tailwindcss/base.css';
-@import '../../node_modules/tailwindcss/components.css';
-@import '../../node_modules/tailwindcss/utilities.css';
-
-
-@import '../themes/001/fonts/icomoon/style.css';
-@import '../themes/001/fonts/flaticon/font/flaticon.css';
 @import '../../node_modules/bootstrap/dist/css/bootstrap.css';
-@import '../themes/001/css/tiny-slider.css';
-@import '../themes/001/css/aos.css';
-@import '../themes/001/css/glightbox.min.css';
-@import '../themes/001/css/style.css';
-@import '../themes/001/css/flatpickr.min.css';
-
-[x-cloak] {
-    display: none;
-}
 

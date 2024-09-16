@@ -14,7 +14,7 @@ export default defineConfig({
             ]
         }),
         laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js', 'resources/css/site.css', 'resources/js/site.js'],
+            input: ['resources/css/site.css', 'resources/js/site.js'],
             refresh: true,
         }),
     ],
