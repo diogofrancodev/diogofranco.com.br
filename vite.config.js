@@ -8,13 +8,13 @@ export default defineConfig({
         viteStaticCopy({
             targets: [
               {
-                src: ['resources/assets', 'resources/images'],
+                src: 'resources/assets',
                 dest: ''
               }
             ]
         }),
         laravel({
-            input: ['resources/css/site.css', 'resources/js/site.js'],
+            input: ['resources/css/site.css','resources/js/site.js','resources/css/admin/admin.css','resources/js/admin/admin.js'],
             refresh: true,
         }),
     ],

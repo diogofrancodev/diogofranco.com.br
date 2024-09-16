@@ -1,0 +1,40 @@
+[?25l
+[90m ┌[39m [36mWhich provider or tag's files would you like to publish?[39m [90m───────────────┐[39m
+[90m │[39m [2m[7mS[27mearch...[22m                                                               [90m│[39m
+[90m ├─────────────────────────────────────────────────────────────────────────┤[39m
+[90m │[39m   [2mAll providers and tags[22m                                              [36m┃[39m [90m│[39m
+[90m │[39m   [2mProvider: Illuminate\Foundation\Providers\FoundationServiceProvider[22m [90m│[39m [90m│[39m
+[90m │[39m   [2mProvider: Illuminate\Mail\MailServiceProvider[22m                       [90m│[39m [90m│[39m
+[90m │[39m   [2mProvider: Illuminate\Notifications\NotificationServiceProvider[22m      [90m│[39m [90m│[39m
+[90m │[39m   [2mProvider: Illuminate\Pagination\PaginationServiceProvider[22m           [90m│[39m [90m│[39m
+[90m │[39m   [2mProvider: LaravelPWA\Providers\LaravelPWAServiceProvider[22m            [90m│[39m [90m│[39m
+[90m │[39m   [2mProvider: Laravel\Fortify\FortifyServiceProvider[22m                    [90m│[39m [90m│[39m
+[90m │[39m   [2mProvider: Laravel\Jetstream\JetstreamServiceProvider[22m                [90m│[39m [90m│[39m
+[90m │[39m   [2mProvider: Laravel\Sail\SailServiceProvider[22m                          [90m│[39m [90m│[39m
+[90m │[39m   [2mProvider: Laravel\Sanctum\SanctumServiceProvider[22m                    [90m│[39m [90m│[39m
+[90m │[39m   [2mProvider: Laravel\Tinker\TinkerServiceProvider[22m                      [90m│[39m [90m│[39m
+[90m └─────────────────────────────────────────────────────────────────────────┘[39m
+
+[1G[17A[J
+[90m ┌[39m [36mWhich provider or tag's files would you like to publish?[39m [90m───────────────┐[39m
+[90m │[39m [2m[7mS[27mearch...[22m                                                           [36m…[39m   [90m│[39m
+[90m ├─────────────────────────────────────────────────────────────────────────┤[39m
+[90m │[39m   [2mAll providers and tags[22m                                              [36m┃[39m [90m│[39m
+[90m │[39m   [2mProvider: Illuminate\Foundation\Providers\FoundationServiceProvider[22m [90m│[39m [90m│[39m
+[90m │[39m   [2mProvider: Illuminate\Mail\MailServiceProvider[22m                       [90m│[39m [90m│[39m
+[90m │[39m   [2mProvider: Illuminate\Notifications\NotificationServiceProvider[22m      [90m│[39m [90m│[39m
+[90m │[39m   [2mProvider: Illuminate\Pagination\PaginationServiceProvider[22m           [90m│[39m [90m│[39m
+[90m │[39m   [2mProvider: LaravelPWA\Providers\LaravelPWAServiceProvider[22m            [90m│[39m [90m│[39m
+[90m │[39m   [2mProvider: Laravel\Fortify\FortifyServiceProvider[22m                    [90m│[39m [90m│[39m
+[90m │[39m   [2mProvider: Laravel\Jetstream\JetstreamServiceProvider[22m                [90m│[39m [90m│[39m
+[90m │[39m   [2mProvider: Laravel\Sail\SailServiceProvider[22m                          [90m│[39m [90m│[39m
+[90m │[39m   [2mProvider: Laravel\Sanctum\SanctumServiceProvider[22m                    [90m│[39m [90m│[39m
+[90m │[39m   [2mProvider: Laravel\Tinker\TinkerServiceProvider[22m                      [90m│[39m [90m│[39m
+[90m └─────────────────────────────────────────────────────────────────────────┘[39m
+[1G[16A[J
+[31m ┌[39m [2mWhich provider or tag's files would you like to publish?[22m [31m────┐[39m
+[31m │[39m [9m[2mSearch...[22m[29m                                                    [31m│[39m
+[31m └──────────────────────────────────────────────────────────────┘[39m
+[31m  ⚠ Cancelled.[39m
+
+[?25h

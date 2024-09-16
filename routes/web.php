@@ -19,10 +19,9 @@ Route::middleware([
     })->name('dashboard');
 });
 
-
 Route::get('/register', function () {
-    // ...
-})->middleware(['auth:sanctum']);
+    // Only authenticated users may access this route...
+})->middleware('auth');
 
 Route::get('/offline', function () {
     return view('offline');
