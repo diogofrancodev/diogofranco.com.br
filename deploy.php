@@ -33,7 +33,6 @@ host('production')
         'artisan:optimize',
         'deploy:publish',
         'php-fpm:reload',
-        'pulse:check',
 
     ]);
 
@@ -56,9 +55,6 @@ host('production')
         run('npm install;npm run build;');
     });
 
-    task('pulse:check', function () {
-        run('php artisan pulse:check');
-    });
 
     after('artisan:optimize', 'artisan:config:clear');
     after('artisan:config:clear', 'artisan:migrate');
