@@ -55,6 +55,9 @@ host('production')
         run('npm install;npm run build;');
     });
 
+    desc('Starts the Pulse server');
+    task('artisan:pulse:check', artisan('pulse:check'));
+
 
     after('artisan:optimize', 'artisan:config:clear');
     after('artisan:config:clear', 'artisan:migrate');
