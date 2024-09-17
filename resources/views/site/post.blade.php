@@ -81,36 +81,26 @@
 @section('content')
 <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
     <div class="col-lg-6 px-0">
-      <h1 class="display-4 fst-italic">{{ $lastPost->title }}</h1>
-      <p class="lead my-3">{{ $lastPost->title }}</p>
-      <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continue reading...</a></p>
+      <h1 class="display-4 fst-italic">Galeria rotativa de meus projetos</h1>
     </div>
   </div>
 
-  <div class="row mb-2">
-    @foreach ($posts as $post)
-        <div class="col-md-6">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            <div class="col p-4 d-flex flex-column position-static">
-                <strong class="d-inline-block mb-2 text-primary-emphasis">{{ $post->category->name }}</strong>
-                <h3 class="mb-0">{{ $post->title }}</h3>
-                <div class="mb-1 text-body-secondary">{{ $post->created_at->format('d/m/Y') }}</div>
-                <p class="card-text mb-auto">{{ $post->excerpt }}</p>
-                <a href="{{ URL('/post/'.$post->id )}}" class="icon-link gap-1 icon-link-hover stretched-link">
-                Ler
-                <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-                </a>
-            </div>
-            <div class="col-auto d-none d-lg-block">
-                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            </div>
-            </div>
-        </div>
-    @endforeach
+  <div class="row g-5">
+    <div class="col-md-12">
 
+        <article class="blog-post">
+            <h2 class="display-5 link-body-emphasis mb-1">{{ $post->title }}</h2>
+            <p class="blog-post-meta">{{ $post->created_at }} por: <a href="#">{{ $post->user->name }}</a></p>
+            {!! $post->body !!}
+        </article>
+
+      <nav class="blog-pagination" aria-label="Pagination">
+        <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
+        <a class="btn btn-outline-secondary rounded-pill disabled" aria-disabled="true">Newer</a>
+      </nav>
+
+    </div>
 
 
   </div>
-
-
 @endsection

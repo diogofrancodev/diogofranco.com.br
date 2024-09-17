@@ -70,7 +70,7 @@
 
         </div>
         <div class="col-4 text-center">
-            <a href="index.html" id="logo-navbar" >
+            <a href="{{ URL('/') }}" id="logo-navbar" >
 
             </a>
         </div>

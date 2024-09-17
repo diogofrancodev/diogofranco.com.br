@@ -7,6 +7,8 @@ use App\Http\Controllers\Site\StoreController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CheckoutController;
 
+use App\Http\Controllers\Site\SiteController;
+
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\Admin\CategoryPostController;
@@ -16,11 +18,11 @@ use App\Http\Controllers\Admin\RolesController;
 use App\Http\Controllers\Admin\UsersController;
 
 
-Route::get('/', function () {
-    return view('site.index');
-});
 
-
+Route::get('/', [SiteController::class, 'index'])->name('site.index');
+Route::get('/posts', [SiteController::class, 'postAll'])->name('site.posts');
+Route::get('/posts/{category}', [SiteController::class, 'postCategory'])->name('site.posts.category');
+Route::get('/post/{id}', [SiteController::class, 'post'])->name('site.post');
 
 Route::middleware([
     'auth:sanctum',

@@ -1,8 +1,8 @@
 var staticCacheName = "pwa-v" + new Date().getTime();
 var filesToCache = [
     '/offline',
-    '/build/assets/app.css',
-    '/build/assets/app.js',
+    '/build/assets/site.css',
+    '/build/assets/site.js',
     '/build/images/icons/icon-72x72.png',
     '/build/images/icons/icon-96x96.png',
     '/build/images/icons/icon-128x128.png',

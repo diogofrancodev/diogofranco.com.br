@@ -43,10 +43,10 @@
 
       document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
         if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
-            document.getElementById('logo-navbar').innerHTML = '<img src="build/assets/img/diogofranco.svg" width="40" alt="">';
+            document.getElementById('logo-navbar').innerHTML = '<img src="/build/assets/img/diogofranco.svg" width="40" alt="">';
         }
         else {
-            document.getElementById('logo-navbar').innerHTML = '<img src="build/assets/img/diogofranco-b.svg" width="40" alt="">';
+            document.getElementById('logo-navbar').innerHTML = '<img src="/build/assets/img/diogofranco-b.svg" width="40" alt="">';
         }
         element.classList.remove('active')
         element.setAttribute('aria-pressed', 'false')
