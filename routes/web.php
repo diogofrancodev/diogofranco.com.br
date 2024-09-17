@@ -19,6 +19,8 @@ use App\Http\Controllers\Admin\UsersController;
 
 
 
+
+
 Route::get('/', [SiteController::class, 'index'])->name('site.index');
 Route::get('/posts', [SiteController::class, 'postAll'])->name('site.posts');
 Route::get('/posts/categoria/{id}', [SiteController::class, 'postCategory'])->name('site.posts.category');
@@ -55,9 +57,13 @@ Route::group(['middleware' => ['auth'],'prefix' => 'admin'],function () {
     Route::delete('users_mass_destroy', [UsersController::class, 'massDestroy'])->name('users.mass_destroy');
 });
 
+
+
 Route::get('/register', function () {
     // Only authenticated users may access this route...
 })->middleware('auth');
+
+
 
 Route::get('/offline', function () {
     return view('offline');

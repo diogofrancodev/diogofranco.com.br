@@ -7,9 +7,10 @@
     "require": {
         "php": "^8.2",
         "deployer/deployer": "^7.3",
-        "laravel/framework": "^11.0",
         "laracasts/flash": "^3.2",
+        "laravel/framework": "^11.0",
         "laravel/jetstream": "^5.0",
+        "laravel/pulse": "^1.2",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
         "livewire/livewire": "^3.0",

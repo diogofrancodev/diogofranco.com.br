@@ -33,6 +33,7 @@ host('production')
         'artisan:optimize',
         'deploy:publish',
         'php-fpm:reload',
+        'pulse:check',
 
     ]);
 

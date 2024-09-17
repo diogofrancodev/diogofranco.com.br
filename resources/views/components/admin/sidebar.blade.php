@@ -55,9 +55,9 @@
         Dev
     </div>
     <li class="nav-item">
-        <a class="nav-link" href="{{ url('/telescope') }}" target="_blank">
+        <a class="nav-link" href="{{ url('/pulse') }}" target="_blank">
             <i class="fas fa-fw fa-search"></i>
-            <span>Telescope</span>
+            <span>Pulse</span>
         </a>
     </li>
     @endif
