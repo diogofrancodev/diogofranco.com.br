@@ -56,7 +56,7 @@ host('production')
         run('npm install;npm run build;');
     });
 
-    ask('pulse:check', function () {
+    task('pulse:check', function () {
         run('php artisan pulse:check');
     });
 
