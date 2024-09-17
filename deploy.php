@@ -56,6 +56,10 @@ host('production')
         run('npm install;npm run build;');
     });
 
+    ask('pulse:check', function () {
+        run('php artisan pulse:check');
+    });
+
     after('artisan:optimize', 'artisan:config:clear');
     after('artisan:config:clear', 'artisan:migrate');
 
