@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'name' => 'DiogoFranco',
+    'name' => 'Diogo Franco',
     'manifest' => [
         'name' => env('APP_NAME', 'Diogo Franco'),
         'short_name' => 'DF',
