@@ -88,7 +88,7 @@
             <h3 class="mb-0">{{ $post->title }}</h3>
             <div class="mb-1 text-body-secondary">{{ $post->created_at->format('d/m/Y') }}</div>
             <p class="card-text mb-auto">{{ $post->excerpt }}</p>
-            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            <a href="{{ URL('/post/'.$post->id )}}" class="icon-link gap-1 icon-link-hover stretched-link">
               Ler
               <svg class="bi"><use xlink:href="#chevron-right"/></svg>
             </a>
