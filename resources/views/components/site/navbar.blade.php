@@ -81,10 +81,7 @@
     </header>
 
     <div class="nav-scroller py-1 mb-3 border-bottom">
-    <nav class="nav nav-underline justify-content-left">
-        <a class="nav-item nav-link link-body-emphasis active" href="#">PHP</a>
-        <a class="nav-item nav-link link-body-emphasis" href="#">LINUX</a>
-        <a class="nav-item nav-link link-body-emphasis" href="#">ARDUINO</a>
+    <nav class="nav nav-underline justify-content-left" id="menu-site">
     </nav>
     </div>
 </div>

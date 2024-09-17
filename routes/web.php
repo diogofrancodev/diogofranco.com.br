@@ -40,16 +40,17 @@ Route::group(['middleware' => ['auth'],'prefix' => 'admin'],function () {
 
     Route::resource('/posts', PostController::class);
 
+
     // Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     // Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     // Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
-    // Route::resource('permissions', PermissionsController::class);
-    // Route::delete('permissions_mass_destroy', [PermissionsController::class], 'massDestroy')->name('permissions.mass_destroy');
-    // Route::resource('roles', RolesController::class);
-    // Route::delete('roles_mass_destroy', [RolesController::class, 'massDestroy'])->name('roles.mass_destroy');
-    // Route::resource('users', UsersController::class );
-    // Route::delete('users_mass_destroy', [UsersController::class, 'massDestroy'])->name('users.mass_destroy');
+    Route::resource('permissions', PermissionsController::class);
+    Route::delete('permissions_mass_destroy', [PermissionsController::class], 'massDestroy')->name('permissions.mass_destroy');
+    Route::resource('roles', RolesController::class);
+    Route::delete('roles_mass_destroy', [RolesController::class, 'massDestroy'])->name('roles.mass_destroy');
+    Route::resource('users', UsersController::class );
+    Route::delete('users_mass_destroy', [UsersController::class, 'massDestroy'])->name('users.mass_destroy');
 });
 
 Route::get('/register', function () {
