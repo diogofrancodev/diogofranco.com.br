@@ -79,8 +79,6 @@
     }
   </style>
 @section('content')
-
-
   <div class="row mb-2">
     @foreach ($posts as $post)
     <div class="col-md-6">
@@ -102,6 +100,4 @@
       </div>
     @endforeach
   </div>
-
-
 @endsection

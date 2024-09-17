@@ -10,7 +10,7 @@ const promise = new Promise((resolve, reject) => {
     const url = '/api/menu/list';
     $.getJSON(url, data => {
         data.forEach(function(element) {
-            str += `<a class="nav-item nav-link link-body-emphasis" href="#">${element.name}</a>`
+            str += `<a class="nav-item nav-link link-body-emphasis" href="/posts/categoria/${element.id}">${element.name}</a>`
           });
           menu.innerHTML = str;
     });

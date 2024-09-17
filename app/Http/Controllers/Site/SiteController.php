@@ -33,7 +33,7 @@ class SiteController extends Controller
     public function postAll(): View
     {
         try{
-            $posts = Post::all();
+            $posts = Post::all()->paginate(7);
             return view('site.posts', compact('posts'));
         } catch (\Throwable $throwable) {
             flash('Erro ao procurar as Posts Cadastrados!')->error();
@@ -41,11 +41,11 @@ class SiteController extends Controller
         }
     }
 
-    public function postCategory(): View
+    public function postCategory($category_id): View
     {
         try{
-            $posts = Post::all();
-            return view('site.posts', compact('posts'));
+            $posts = Post::where('category_posts_id', $category_id)->paginate(7);
+            return view('site.posts_categoria', compact('posts'));
         } catch (\Throwable $throwable) {
             flash('Erro ao procurar as Posts Cadastrados!')->error();
             return redirect()->back()->withInput();
