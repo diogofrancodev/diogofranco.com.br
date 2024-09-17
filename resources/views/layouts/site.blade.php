@@ -25,8 +25,8 @@
                 @yield('content')
         </main>
         <div class="container">
-            <footer class="py-5">
-              <div class="row">
+            <footer class="py-5 ">
+              <div class="row ">
                 <div class="col-4 col-md-2 mb-3">
                   <h5><b>Páginas</b></h5>
                   <ul class="nav flex-column">

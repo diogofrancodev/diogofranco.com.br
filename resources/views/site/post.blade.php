@@ -1,3 +1,6 @@
+<?php
+use Carbon\Carbon;
+?>
 @extends('layouts.site')
 
 <style>
@@ -90,17 +93,11 @@
 
         <article class="blog-post">
             <h2 class="display-5 link-body-emphasis mb-1">{{ $post->title }}</h2>
-            <p class="blog-post-meta">{{ $post->created_at }} por: <a href="#">{{ $post->user->name }}</a></p>
-            {!! $post->body !!}
+            <p class="blog-post-meta"> {{ $post->created_at->format('d/m/Y') }} <span class="badge text-bg-primary">{{ $post->user->name }}</</span>
+            <div class="my-4">
+                {!! $post->body !!}
+            </div>
         </article>
-
-      <nav class="blog-pagination" aria-label="Pagination">
-        <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
-        <a class="btn btn-outline-secondary rounded-pill disabled" aria-disabled="true">Newer</a>
-      </nav>
-
     </div>
-
-
   </div>
 @endsection
