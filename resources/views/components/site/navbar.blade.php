@@ -70,7 +70,9 @@
 
         </div>
         <div class="col-4 text-center">
-            <a href="index.html" ><img src="{{ asset('build/assets/img/diogofranco-b.svg') }}" width="40" alt=""></span></a>
+            <a href="index.html" id="logo-navbar" >
+
+            </a>
         </div>
         <div class="col-4 d-flex justify-content-end align-items-center">
 
