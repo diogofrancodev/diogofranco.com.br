@@ -33,7 +33,6 @@ host('production')
         'artisan:optimize',
         'deploy:publish',
         'php-fpm:reload',
-        'artisan:pulse:check',
 
     ]);
 
@@ -55,9 +54,6 @@ host('production')
         cd('{{release_path}}');
         run('npm install;npm run build;');
     });
-
-    desc('Starts the Pulse server');
-    task('artisan:pulse:check', artisan('pulse:check'));
 
 
     after('artisan:optimize', 'artisan:config:clear');
