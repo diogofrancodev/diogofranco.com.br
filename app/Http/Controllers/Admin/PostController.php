@@ -82,10 +82,6 @@ class PostController extends Controller
             return redirect('admin/posts');
         }catch (\Throwable $throwable){
             DB::rollBack();
-            if($request->file){
-                Storage::delete('posts', $request->file( key:'image'));
-            }
-            dd($throwable);
             flash('Erro Cadastrar!')->error();
             return redirect()->back()->withInput();
         }
@@ -103,7 +99,6 @@ class PostController extends Controller
 
             return view('admin.post.show');
         } catch (\Exception $exception) {
-            dd($exception);
             flash('Erro ao buscar a Capa!')->error();
             return redirect()->back()->withInput();
         }
@@ -122,7 +117,6 @@ class PostController extends Controller
 
             return view('admin.post.edit', compact('post','categories'));
         } catch (\Throwable $throwable) {
-            dd($throwable);
             flash('Erro ao procurar as PostS Cadastradas!')->error();
             return redirect()->back()->withInput();
         }
@@ -141,7 +135,7 @@ class PostController extends Controller
             $post_oldimage = $post->image;
             if($request->file( key:'image')!= ''){
                 $post_image = Storage::disk('posts')->put('web', $request->file( key:'image'));
-                Storage::disk('posts')->delete($post_oldimage);
+                // Storage::disk('posts')->delete($post_oldimage);
             }
             $post_update = Post::find($id);
             $post_update->user_id = $user;
@@ -163,7 +157,6 @@ class PostController extends Controller
             return redirect('admin/posts');
         }catch (\Throwable $throwable){
             DB::rollBack();
-            dd($throwable);
             flash('Erro ao editar Post!')->error();
             return redirect()->back()->withInput();
         }

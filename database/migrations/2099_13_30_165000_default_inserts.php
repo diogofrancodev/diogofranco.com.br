@@ -44,16 +44,19 @@ class DefaultInserts extends Migration
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'permission-show', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'permission-create', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'permission-store', 'guard_name' => 'web']);
+        Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'permission-edit', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'permission-update', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'permission-delete', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'role-show', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'role-create', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'role-store', 'guard_name' => 'web']);
+        Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'role-edit', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'role-update', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'role-delete', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'user-show', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'user-create', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'user-store', 'guard_name' => 'web']);
+        Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'user-edit', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'user-update', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'user-delete', 'guard_name' => 'web']);
 
@@ -61,6 +64,7 @@ class DefaultInserts extends Migration
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'categorypost-show', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'categorypost-store', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'categorypost-create', 'guard_name' => 'web']);
+        Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'categorypost-edit', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'categorypost-update', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'categorypost-destroy', 'guard_name' => 'web']);
 
@@ -68,6 +72,7 @@ class DefaultInserts extends Migration
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'depoiment-show', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'depoiment-store', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'depoiment-create', 'guard_name' => 'web']);
+        Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'depoiment-edit', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'depoiment-update', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'depoiment-destroy', 'guard_name' => 'web']);
 
@@ -75,8 +80,17 @@ class DefaultInserts extends Migration
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'post-show', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'post-store', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'post-create', 'guard_name' => 'web']);
+        Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'post-edit', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'post-update', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'post-destroy', 'guard_name' => 'web']);
+
+        Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'config-index', 'guard_name' => 'web']);
+        Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'config-show', 'guard_name' => 'web']);
+        Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'config-store', 'guard_name' => 'web']);
+        Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'config-create', 'guard_name' => 'web']);
+        Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'config-edit', 'guard_name' => 'web']);
+        Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'config-update', 'guard_name' => 'web']);
+        Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'config-destroy', 'guard_name' => 'web']);
 
 
 
