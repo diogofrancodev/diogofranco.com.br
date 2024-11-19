@@ -16,14 +16,14 @@
         <!-- Scripts -->
         @vite(['resources/css/site.css', 'resources/js/site.js'])
         <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EW0YW4567T"></script>
+<!--         <script async src="https://www.googletagmanager.com/gtag/js?id=G-EW0YW4567T"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
         
           gtag('config', 'G-EW0YW4567T');
-        </script>
+        </script> -->
     </head>
     <body id="page-top">
         @component('components.site.navbar')
