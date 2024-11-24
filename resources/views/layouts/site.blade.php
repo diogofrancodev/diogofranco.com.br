@@ -57,7 +57,7 @@
                 <div class="col-4 col-md-2 mb-3">
                   <h5><b>Útil</b></h5>
                   <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="{{ url('/login') }}" class="nav-link p-0 text-body-secondary">Admin</a></li>
+                    <li class="nav-item mb-2"><a href="{{ url('/admin') }}" class="nav-link p-0 text-body-secondary">Admin</a></li>
                     <li class="nav-item mb-2"><a href="https://github.com/diogofrancodev" target="_blank" class="nav-link p-0 text-body-secondary">GitHub</a></li>
                   </ul>
                 </div>
