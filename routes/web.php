@@ -8,11 +8,12 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CheckoutController;
 
 use App\Http\Controllers\Site\SiteController;
+use App\Http\Controllers\Site\DevPingController;
 
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\Admin\CategoryPostController;
-
+use App\Http\Controllers\Admin\DevPingController as AdminDevPingController;
 use App\Http\Controllers\Admin\PermissionsController;
 use App\Http\Controllers\Admin\RolesController;
 use App\Http\Controllers\Admin\UsersController;
@@ -25,6 +26,7 @@ Route::get('/', [SiteController::class, 'index'])->name('site.index');
 Route::get('/posts', [SiteController::class, 'postAll'])->name('site.posts');
 Route::get('/posts/categoria/{id}', [SiteController::class, 'postCategory'])->name('site.posts.category');
 Route::get('/post/{id}', [SiteController::class, 'post'])->name('site.post');
+Route::get('/devpings', [DevPingController::class, 'index'])->name('dev.pings');
 
 Route::middleware([
     'auth:sanctum',
@@ -43,6 +45,7 @@ Route::group(['middleware' => ['auth'],'prefix' => 'admin'],function () {
     Route::resource('/post_categorias', CategoryPostController::class);
 
     Route::resource('/posts', PostController::class);
+    Route::resource('/devpings', AdminDevPingController::class);
 
 
     // Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

@@ -79,7 +79,19 @@
     }
   </style>
 @section('content')
-<div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+  @if($lastDevPing)
+  <div class="p-3 mb-2 rounded text-body-emphasis bg-body-secondary devping">
+      <div class="col-12 d-flex justify-content-between">
+          <img class="mb-2" src="{{ asset('build/assets/img/devping.svg') }}" alt="devping" width="70">
+          <a href="{{ route('dev.pings') }}">
+              <button type="button" class="btn btn-light btn-sm">ver <i class="fas fa-plus"></i></button>
+          </a>
+      </div>
+      <p class="ping">{!! $lastDevPing->body !!}</p>
+      <p class="date">{{ $lastDevPing->created_at }}</p>
+  </div>
+  @endif
+  <div class="p-4  mb-4 rounded text-body-emphasis bg-body-secondary">
     <div class="col-lg-6 px-0">
       <h1 class="display-4 fst-italic">{{ $lastPost->title }}</h1>
       <p class="lead my-3">{{ $lastPost->title }}</p>

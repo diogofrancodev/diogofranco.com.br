@@ -27,7 +27,6 @@
     </head>
     <body id="page-top">
         @component('components.site.navbar')
-
         @endcomponent
         <main class="container">
                 @yield('content')
@@ -86,5 +85,6 @@
               </div>
             </footer>
           </div>
+    
     </body>
 </html>

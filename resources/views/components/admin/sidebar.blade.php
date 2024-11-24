@@ -47,6 +47,19 @@
             {{-- <i class="fa-brands fa-dev position-absolute bottom-0 icon-dev"></i> --}}
         </a>
     </li>
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        DevPing
+    </div>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url('admin/devpings') }}">
+            <i class="fas fa-fw fa-paper-plane"></i>
+            <span>Pings</span>
+            {{-- <i class="fa-brands fa-dev position-absolute bottom-0 icon-dev"></i> --}}
+        </a>
+    </li>
     @endif
     @if (auth()->user()->hasRole('Desenvolvedor'))
     <hr class="sidebar-divider">
