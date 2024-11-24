@@ -79,7 +79,6 @@
   </style>
 @section('content')
 
-<div class="container">
 <img class="d-block mx-auto my-4" src="{{ asset('build/assets/img/devping.svg') }}" alt="devping" width="120">
 <div class="my-3 p-3 bg-body rounded shadow-sm">
     <div class="d-flex text-body-secondary pt-3">
@@ -102,7 +101,6 @@
     </div>
     
   </div>
-</div>
 
 
 
