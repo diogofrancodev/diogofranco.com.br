@@ -11,8 +11,8 @@ class DevPingController extends Controller
 {
     public function index()
     {
-        $devPings = DevPing::paginate(25);
-        
+        $devPings = DevPing::orderBy('created_at', 'desc')->paginate(25);
+
         return view('site.devpings', compact('devPings'));
     }
 }

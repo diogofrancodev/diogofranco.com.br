@@ -91,9 +91,10 @@
     <p class="date">{{ $devPing->user->name }} | {{ $devPing->created_at->format('d/m/Y') }}</p>
 </div>
 @endforeach
-    <div class="row d-flex justify-content-center">
+    <div class="mt-4 col-12 d-flex justify-content-center">
         {{ $devPings->appends(request()->query())->links() }}
     </div>
+
 
 </div>
 
