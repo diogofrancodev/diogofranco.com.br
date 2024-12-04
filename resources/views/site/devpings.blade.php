@@ -80,28 +80,22 @@
 @section('content')
 
 <img class="d-block mx-auto my-4" src="{{ asset('build/assets/img/devping.svg') }}" alt="devping" width="120">
-<div class="my-3 p-3 bg-body rounded shadow-sm">
-    <div class="d-flex text-body-secondary pt-3">
-        @foreach($devPings as $devPing)
-        <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
-          <div class="d-flex justify-content-between">
-              <strong class="text-gray-dark">
-                  {!! $devPing->body !!}
-              </strong>
-              <a href="#">
-                  <button type="button" class="btn btn-light btn-sm"><i class="fas fa-share"></i></button>
-              </a>
-          </div>
-          <span class="d-block">{{ $devPing->created_at }}</span>
-        </div>
-        @endforeach
-        <div class="row d-flex justify-content-center">
-            {{ $devPings->appends(request()->query())->links() }}
-        </div>
+@foreach($devPings as $devPing)
+<div class="p-3 mb-2 rounded text-body-emphasis bg-body-secondary devping">
+    <div class="col-12 d-flex justify-content-end">
+        <a href="{{ route('dev.pings') }}">
+            <button type="button" class="btn btn-light btn-sm"><i class="fas fa-share-nodes"></i></button>
+        </a>
     </div>
-    
-  </div>
+    <p class="ping">{!! $devPing->body !!}</p>
+    <p class="date">{{ $devPing->user->name }} | {{ $devPing->created_at->format('d/m/Y') }}</p>
 </div>
-  
+@endforeach
+    <div class="row d-flex justify-content-center">
+        {{ $devPings->appends(request()->query())->links() }}
+    </div>
+
+</div>
+
 
 @endsection

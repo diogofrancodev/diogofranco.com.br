@@ -18,7 +18,7 @@ class SiteController extends Controller
     {
         try{
             $lastPost = Post::latest()->first();
-            $lastDevPing = DevPing::latest()->first(); 
+            $lastDevPing = DevPing::latest()->first();
 
             $posts = Post::orderBy('created_at', 'desc')
             ->skip(1) // Pula o primeiro registro (último post)
@@ -28,6 +28,7 @@ class SiteController extends Controller
             return view('site.index', compact('posts', 'lastPost', 'lastDevPing'));
         } catch (\Throwable $throwable) {
             flash('Erro ao procurar as Posts Cadastrados!')->error();
+            dd($throwable);
             return redirect()->back()->withInput();
         }
     }
