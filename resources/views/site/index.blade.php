@@ -92,7 +92,7 @@
   </div>
   @endif
   <div class="p-4  mb-4 rounded text-body-emphasis bg-body-secondary">
-    <div class="col-lg-6 px-0">
+    <div class="col-lg-12 px-0">
       <h1 class="display-4 fst-italic">{{ $lastPost->title }}</h1>
       <p class="lead my-3">{{ $lastPost->title }}</p>
       <p class="lead mb-0"><a href="{{ URL('/post/'.$lastPost->id ) }}" class="text-body-emphasis fw-bold">Ler</a></p>
