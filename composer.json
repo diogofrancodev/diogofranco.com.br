@@ -17,6 +17,7 @@
         "livewire/volt": "^1.6",
         "monolog/monolog": "^3.5",
         "owen-it/laravel-auditing": "^13.6",
+        "sentry/sentry-laravel": "^4.13",
         "silviolleite/laravelpwa": "^2.0",
         "spatie/laravel-permission": "^6.9"
     },
