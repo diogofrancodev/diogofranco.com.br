@@ -60,6 +60,8 @@ class DefaultInserts extends Migration
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'user-update', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'user-delete', 'guard_name' => 'web']);
 
+        Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'dashboard-index', 'guard_name' => 'web']);
+
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'categorypost-index', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'categorypost-show', 'guard_name' => 'web']);
         Role::findByName('Desenvolvedor')->permissions()->firstOrCreate(['name' => 'categorypost-store', 'guard_name' => 'web']);
